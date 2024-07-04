@@ -126,6 +126,11 @@
       cursor: pointer;
     }
 
+    .press_kit:hover,
+    .press_kit::after {
+      background-color: #2AABEE;
+    }
+
     .social:hover {
       color: #fff;
     }
@@ -213,6 +218,12 @@
       </div>
        End telegram Icon -->
 
+      <!-- Start Press Kit Icon -->
+      <div id="press_kit" onclick="navigate(this.id)" class="fill press_kit">
+        <span class="icon"><i class="fab fa-newspaper"></i></span>
+      </div>
+      <!-- End Press Kit Icon -->
+
 
     </div>
 
@@ -256,6 +267,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "press_kit") {
+          window.open("https://oxenai.notion.site/Press-Kit-Global-Climate-Data-Challenge-0debde1a4d734db59f833b09b6e59e48?pvs=4", '_blank').focus(); //Add the url to your telegram account
         }
       }
 
